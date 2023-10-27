@@ -1,3 +1,4 @@
+@use 'components/colorsVariaveis';
 
 .hero {
     padding-top: 16px;
@@ -32,17 +33,18 @@
         margin-bottom: 8px;
         font-size: 40px;
         line-height: 56px;
-        color: yellow;
+        color: colorsVariaveis.$CorAmarela;
         font-weight: 800;
         text-align: center;
 
     }
 
     &__logo {
-        width: 50%;
+        max-width: 360px;
         margin: 0 auto;
-        height: 300px;
+        width: 100%;
         display: block;
+        border-radius: 4px;
     }
 
     @media (max-width: 640px) {

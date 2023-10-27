@@ -1,0 +1,83 @@
+@use "components/colorsVariaveis";
+
+.evento {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &--img-left {
+    .container {
+      flex-direction: row-reverse;
+      gap: 40px;
+    }
+  }
+  
+  &--coquetel {
+    background-image: linear-gradient(colorsVariaveis.$CorFundo1, colorsVariaveis.$CorFundo2);
+  }
+  
+  &--rodizio {
+    background-image: linear-gradient(colorsVariaveis.$CorFundo2, colorsVariaveis.$CorFundo3);
+  }
+
+  &--pista {
+    background-image: linear-gradient(colorsVariaveis.$CorFundo3, colorsVariaveis.$CorFundo4);
+  }
+
+  &--bolo {
+    background-image: linear-gradient(colorsVariaveis.$CorFundo4, colorsVariaveis.$CorFundo1);
+  }
+
+  &--presente {
+    background-image: linear-gradient(colorsVariaveis.$CorFundo1, colorsVariaveis.$CorFundo2);
+  }
+
+
+  .container {
+    display: flex;
+  }
+
+  &__img {
+    max-width: 360px;
+    border-radius: 4px;
+  }
+
+  &__detalhes {
+    &__titulo {
+      font-size: 18px;
+      font-weight: bold;
+      color: colorsVariaveis.$CorAmarela;
+      text-transform: uppercase;
+    }
+
+    &__descricao {
+      padding-top: 16px;
+      font-size: 16px;
+      line-height: 22px;
+      color: colorsVariaveis.$CorAmarela;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+      text-align: justify;
+    }
+
+    &__detalhes {
+      &__descricao {
+        padding-bottom: 16px;
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+
+    .container {
+      gap: 40px;
+    }
+  }
+}

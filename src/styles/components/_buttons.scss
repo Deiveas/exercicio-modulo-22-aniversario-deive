@@ -1,3 +1,4 @@
+@use './colorsVariaveis';
 
 .button {
     padding: 12px;
@@ -8,14 +9,14 @@
     border-radius: 4px;
     
     &--primary {
-        color: #fff;
-        background-color: #4f2ac3;
+        color: colorsVariaveis.$CorTextoButton;
+        background-color: colorsVariaveis.$CorButton;
         white-space: nowrap;
         text-align: center;
 
         &:hover {
-            background-color: #000;
-            color: yellow;
+            background-color: colorsVariaveis.$CorFundo1;
+            color: colorsVariaveis.$CorAmarela;
             
         }
     }

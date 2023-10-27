@@ -1,10 +1,12 @@
+@use './colorsVariaveis';
 
 .infos-bar {
     padding: 4px;
     padding-top: 16px;
-    background-color: yellow;
+    background-color: colorsVariaveis.$CorAmarela;
     display: flex;
     justify-content: space-between;
+    border-radius: 4px;
 
     &__infos {
         display: flex;

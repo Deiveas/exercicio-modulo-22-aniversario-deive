@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aniverário do Deive</title>
+    <title>Aniverário fictício do Deive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,34 +11,97 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="hero">
       <div class="video-background">
-        <iframe src="https://gifer.com/embed/7fYg" width=480 height=360.000 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p>
+        <iframe
+          src="https://gifer.com/embed/7fYg"
+          width="480"
+          height="360.000"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p><a href="https://gifer.com"></a></p>
       </div>
       <div class="container">
-          <img class="hero__logo" src="imagens/logo-aniversario.jpeg" alt="logo-aniversario" />
-          <p class="hero__text">
-              Convido todos meus familiares e amigos para meu 51º aniversário que acontecerá em 35d 12h 25m 35s 
-          </p>
-          <div class="infos-bar">
-              <ul class="infos-bar__infos">
-                  <li class="infos-bar__infos__item">
-                      <b>Localização: Salão de Festas Condomínio Ideal Cores</b>
-                      Rua Antônio Pinto Guedes, 195 - Morada do Sol - Mogi das Cruzes-SP
-                  </li>
-                  <li class="infos-bar__infos__item">
-                      <b>Quando: </b>
-                      26/04/2024 às 19hrs
-                  </li>
-              </ul>
-              <a class="button button--primary" target="_blank" href="https://th.bing.com/th/id/OIG.LcLgpYdSXde4_1Q9NfqS?pid=ImgGn">
-                  Adquira seu convite
-              </a>
-          </div>
+        <img
+          class="hero__logo"
+          src="https://th.bing.com/th/id/OIG.pRfFogZlvFkLqiAKZTDb?pid=ImgGn"
+          alt="logo-aniversario"
+        />
+        <p class="hero__text">
+          Convido todos meus familiares e amigos para meu 51º aniversário que
+          acontecerá em <span id="contador"></span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização: Salão de Festas Condomínio Ideal Cores</b>
+              Rua Antônio Pinto Guedes, 195 - Morada do Sol - Mogi das Cruzes-SP
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando: </b>
+              26/04/2024 às 19hrs
+            </li>
+          </ul>
+          <a
+            class="button button--primary"
+            target="_blank"
+            href="https://th.bing.com/th/id/OIG.K_700sPJPrrcw1wXagQL?pid=ImgGn"
+          >
+            Adquira seu convite
+          </a>
+        </div>
       </div>
-  </header>
-  
+    </header>
+    <section class="evento evento--coquetel">
+      <div class="container" data-aos="fade-right">
+        <div class="evento__detalhes">
+          <h2 class="evento__detalhes__titulo">Coquetel de abertura</h2>
+          <p class="evento__detalhes__descricao">Os convidados serão servidos no coquetel de abertura da festa, salgadinhos e bebidas a vontade. </p>
+        </div>
+        <img class="evento__img" src="https://th.bing.com/th/id/OIG.QZSVlU_HsAsTrvDw7vy8?pid=ImgGn" alt="img de abertura">
+      </div>
+    </section>
+    <section class="evento evento--rodizio evento--img-left">
+      <div class="container" data-aos="fade-left">
+        <div class="evento__detalhes">
+          <h2 class="evento__detalhes__titulo">Rodizio de churrasco</h2>
+          <p class="evento__detalhes__descricao">Haverá rodizio de churrasco para todos os convidados através do buffet contratado para atende-los.</p>
+        </div>
+        <img class="evento__img" src="https://th.bing.com/th/id/OIG.YCsPwvlT8ou8i6TL8JVZ?pid=ImgGn" alt="img de churrasco">
+      </div>
+    </section>
+     <section class="evento evento--pista">
+      <div class="container" data-aos="fade-right">
+        <div class="evento__detalhes">
+          <h2 class="evento__detalhes__titulo">Pista de dança</h2>
+          <p class="evento__detalhes__descricao">A festa contará com uma pista de dança e Dj contrato para entreterimento dos convidados.</p>
+        </div>
+        <img class="evento__img" src="https://th.bing.com/th/id/OIG.jdgk9KuDmXp2Z2du5FG1?pid=ImgGn" alt="img de discoteca" >
+      </div>
+     </section>
+     <section class="evento evento--bolo evento--img-left">
+      <div class="container" data-aos="fade-left">
+        <div class="evento__detalhes">
+          <h2 class="evento__detalhes__titulo">Hora do bolo</h2>
+          <p class="evento__detalhes__descricao">Após todos cantarem os parabéns, será cortado o bolo e servido a todos os convidados.</p>
+        </div>
+        <img class="evento__img" src="https://th.bing.com/th/id/OIG.Nay7SFjDrXoQ28nfCZBG?pid=ImgGn" alt="img bolo" >
+      </div>
+     </section>
+     <section class="evento evento--presente">
+      <div class="container" data-aos="fade-right">
+        <div class="evento__detalhes">
+          <h2 class="evento__detalhes__titulo">Entrega de presentes</h2>
+          <p class="evento__detalhes__descricao">Para finalizar a festa, este é o momento de homenagear o aniversariante, momento de entregar os presentes.</p>
+        </div>
+        <img class="evento__img" src="https://th.bing.com/th/id/OIG.b_CJaqWa4MMuxpKX3GAL?pid=ImgGn" alt="img presentes" >
+      </div>
+     </section>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="./scripts/main.js"></script>
   </body>
 </html>
