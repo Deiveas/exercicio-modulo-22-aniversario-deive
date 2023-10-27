@@ -50,7 +50,7 @@
     @media (max-width: 640px) {
         padding: 40px 0;
         &__logo {
-            height: 200px;
+            max-width: 260px;
         }
 
         &__text {
